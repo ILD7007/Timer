@@ -1,0 +1,128 @@
+import time
+
+s = int(input("1~99 사이 원하는 시간 입력 : "))
+a = "▢ ■ ■ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ■ ■ ▢"
+b = "▢ ▢ ■ ▢ ▢\n▢ ■ ■ ▢ ▢\n▢ ▢ ■ ▢ ▢\n▢ ▢ ■ ▢ ▢\n▢ ■ ■ ■ ▢"
+c = "▢ ■ ■ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ■ ■ ■ ▢\n▢ ■ ▢ ▢ ▢\n▢ ■ ■ ■ ▢"
+d = "▢ ■ ■ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ■ ■ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ■ ■ ■ ▢"
+e = "▢ ■ ▢ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ■ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ▢ ▢ ■ ▢"
+f = "▢ ■ ■ ■ ▢\n▢ ■ ▢ ▢ ▢\n▢ ■ ■ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ■ ■ ■ ▢"
+g = "▢ ■ ■ ■ ▢\n▢ ■ ▢ ▢ ▢\n▢ ■ ■ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ■ ■ ▢"
+h = "▢ ■ ■ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ▢ ▢ ■ ▢"
+i = "▢ ■ ■ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ■ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ■ ■ ▢"
+j = "▢ ■ ■ ■ ▢\n▢ ■ ▢ ■ ▢\n▢ ■ ■ ■ ▢\n▢ ▢ ▢ ■ ▢\n▢ ■ ■ ■ ▢"
+t = a
+o = s % 10
+k = a
+
+def second_print():
+    k = second_input()
+    print(t[0:9],k[0:9])
+    print(t[10:19],k[10:19])
+    print(t[20:29],k[20:29])
+    print(t[30:39],k[30:39])
+    print(t[40:49],k[40:49])
+    print()
+    
+def second_input():
+    o = s % 10
+    if o == 0:
+        k = a
+        return k
+    elif o == 1:
+        k = b
+        return k
+    elif o == 2:
+        k = c
+        return k
+    elif o == 3:
+        k = d
+        return k
+    elif o == 4:
+        k = e
+        return k
+    elif o == 5:
+        k = f
+        return k
+    elif o == 6:
+        k = g
+        return k
+    elif o == 7:
+        k = h
+        return k
+    elif o == 8:
+        k = i
+        return k
+    elif o == 9:
+        k = j
+        return k
+
+while True:
+    if s == 0:
+        t = a
+        second_input()
+        second_print()
+        print("\033[31mTime Over!\033[0m")
+        break
+    elif s >= 0 and s < 10:
+        t = a
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 10 and s < 20:
+        t = b
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 20 and s < 30:
+        t = c
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 30 and s < 40:
+        t = d
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 40 and s < 50:
+        t = e
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 50 and s < 60:
+        t = f
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 60 and s < 70:
+        t = g
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 70 and s < 80:
+        t = h
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 80 and s < 90:
+        t = i
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    elif s >= 90 and s < 100:
+        t = j
+        second_input()
+        second_print()
+        s = s - 1
+        time.sleep(1)
+    else:
+        break
